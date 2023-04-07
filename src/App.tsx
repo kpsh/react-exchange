@@ -5,7 +5,7 @@ import { Convert } from "./pages/Convert"
 
 export const App = () => {
   return (
-    <Router>
+    <Router basename="/react-exchange/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Convert />} />
