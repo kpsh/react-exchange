@@ -9,13 +9,13 @@ export const Navbar = () => {
 
   const navigation = [
     { name: "Convert", href: "/", current: true },
-    { name: "Latest Rates", href: "#", current: false },
+    { name: "Latest Rates", href: "/latest", current: false },
     { name: "Previous Rates", href: "#", current: false },
     { name: "Compare", href: "#", current: false },
     { name: "About", href: "/about", current: false },
   ];
   return (
-    <nav className="dark:bg-slate-900 lg:w-full lg:fixed">
+    <nav className="z-50 bg-gray-100 dark:bg-slate-900 lg:w-full lg:fixed">
       <div
         className="container flex flex-wrap justify-between items-center p-6 mx-auto border-b-2 lg:px-8 dark:border-slate-600"
         aria-label="Global"
