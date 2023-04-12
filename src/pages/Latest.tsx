@@ -104,18 +104,18 @@ export const Latest = () => {
 
         <div className="grid grid-cols-2 gap-5 items-center m-5 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 2xl:grid-cols-10 3xl:grid-cols-12 md:m-2 lg:m-0">
           {isLoading ? (
-            <p className="py-2 px-4 text-2xl rounded-3xl text-slate-900 bg-slate-300 dark:bg-slate-600 dark:text-slate-300">
+            <p className="py-2 px-4 text-2xl rounded-lg text-slate-900 bg-slate-300 dark:bg-slate-600 dark:text-slate-300">
               Loading...
             </p>
           ) : (
             exchangeRates.map(([currency, rate]) => (
-              <p
+              <span
                 key={currency}
                 className="p-2 text-slate-900 rounded-md bg-slate-300 dark:bg-slate-600 dark:text-slate-300 hover:dark:bg-slate-700 hover:bg-slate-400"
               >
                 <CurrencyFlag currency={currency} size="md" /> {currency}
                 <p>{rate}</p>
-              </p>
+              </span>
             ))
           )}
         </div>

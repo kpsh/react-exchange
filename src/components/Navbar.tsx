@@ -8,11 +8,11 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: "Convert", href: "/", current: true },
-    { name: "Latest Rates", href: "/latest", current: false },
-    { name: "Previous Rates", href: "#", current: false },
-    { name: "Compare", href: "#", current: false },
-    { name: "About", href: "/about", current: false },
+    { name: "Convert", href: "/" },
+    { name: "Latest Rates", href: "/latest" },
+    { name: "Currency Chart", href: "/chart" },
+    { name: "Compare", href: "#" },
+    { name: "About", href: "/about" },
   ];
   return (
     <nav className="z-50 bg-gray-100 dark:bg-slate-900 lg:w-full lg:fixed">
