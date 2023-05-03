@@ -11,7 +11,6 @@ export const Navbar = () => {
     { name: "Convert", href: "/" },
     { name: "Latest Rates", href: "/latest" },
     { name: "Currency Chart", href: "/chart" },
-    { name: "Compare", href: "#" },
     { name: "About", href: "/about" },
   ];
   return (
